@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+#include <string>
+using std::string;
+
+#include <cstdlib>
+
+int tabuada(int);
+
+int multrand(int);
+
+int main(){
+    int num;
+    int aux;
+    
+    std::cout << "Informe o numero no qual você quer ver a Tabuada: ";
+    std::cin >> num;
+
+    string str = "Tabuada do numero: ";
+        for (char c : str)
+            std::cout << c << ' ';
+    
+    std::cout << num;
+    tabuada(num);
+
+    std::cout << "\nMultiplicação do " << num << " com um numero aleatório.";
+    
+    aux = rand()%100;
+    cout << "\nNumero aleatório: " << aux << "\n";
+    cout << num << "x" << aux << " = " << num * aux;
+    
+return 0;
+}
+
+int tabuada(int n){
+    for(int cont=0; cont <= 10; cont++)
+        cout << n << " x " << cont << " = " << cont * n << "\n";
+    return(0);
+}
