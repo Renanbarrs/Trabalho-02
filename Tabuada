@@ -8,8 +8,6 @@ using std::string;
 
 int tabuada(int);
 
-int multrand(int);
-
 int main(){
     int num;
     int aux;
